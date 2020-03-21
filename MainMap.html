@@ -1,0 +1,31 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    
+    <!-- Tell the mobile browser to disable unwanted scaling of the page and set it to its actual size. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+
+  <style type="text/css">
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    html, body, #mapid {    /* To make our map div element stretch to all available space (fullscreen). */
+        height: 100%;
+        width: 100vw;
+    }
+</style>
+
+</head>
+
+<body>
+    <div id="mapid"></div>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+    <script type="text/javascript" src="InteractiveMap.js"></script>
+</body>
+</html>
