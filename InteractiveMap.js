@@ -12,8 +12,20 @@ var bounds = [[0,0], [8467,5775]]
 var image = L.imageOverlay('Umbra_Main.png', bounds).addTo(map);
 // Show the whole map at once at start (this might be a bit off due to min zoom, can be fixed)
 map.fitBounds(bounds);
+
+var yx = L.latLng;
+
+var xy = function(x, y) {
+    if (L.Util.isArray(x)) {    // When doing xy([x, y]);
+        return yx(x[1], x[0]);
+    }
+    return yx(y, x);  // When doing xy(x, y);
+};
+
 //Set the locations of markers for the map
-var Vostograd = L.latLng([ 6428, 2495 ]);
+var Vostograd = xy(2495,6428);
+
+//L.latLng([ 6428, 2495 ]);
 
 //describe and place markers
 L.marker(Vostograd).addTo(map).bindPopup('The great city of Vostograd, largest city in the world of Umbra, Built on the coast of the mirror sea this sprawling city of narrow streets and bridges is the capitol of the Merchants Kingdom of Daceya');;
