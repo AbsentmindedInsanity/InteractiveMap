@@ -4,6 +4,7 @@ var map = L.map('mapid', {
     crs: L.CRS.Simple,
     minZoom: -3
 });
+//poodle
 
 //Set the "bounds" of the map, this needs to be in the same aspect ratio as the image (.68/1) Note, leaflet uses a (y,x) coord system instead of (x,y)
 var bounds = [[0,0], [8467,5775]]
