@@ -1,13 +1,14 @@
 <html>
 <head>
-
+    <!-- Bring in the proper character set -->
     <meta charset="utf-8">
     
     <!-- Tell the mobile browser to disable unwanted scaling of the page and set it to its actual size. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+    <!-- Grab leaflet's basic stylesheet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
 
+  <!-- Add some basic styling (might make this a seperate file later) -->
   <style type="text/css">
     body {
         padding: 0;
@@ -22,10 +23,13 @@
 </head>
 
 <body>
+    <!-- Render the base map here (mapid is the "name" of the map) -->
     <div id="mapid"></div>
 
+    <!-- Bring in base leaflet scripts -->
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 
+    <!-- Reference our map script (might make it so you can switch between maps) -->
     <script type="text/javascript" src="InteractiveMap.js"></script>
 </body>
 </html>
